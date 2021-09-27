@@ -35,7 +35,7 @@ body{
 .pic{
   display: inline-block;
   padding: 8px;
-  background: linear-gradient(130deg, #ffc77d, #ff6e6e);
+  background: linear-gradient(130deg, #ffc77d, ##5fb4ed);
   margin: auto;
   border-radius: 50%;
   background-size: 200% 200%;
