@@ -1,2 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import background_imgs from "../components/background.svelte";
+</script>
+
+<svelte:component this={background_imgs} />
