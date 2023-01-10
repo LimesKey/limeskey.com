@@ -41,4 +41,3 @@ jobs:
         with:
           # The status of the previous build.
           conclusion: True # optional
-          branch: svelte-remake
