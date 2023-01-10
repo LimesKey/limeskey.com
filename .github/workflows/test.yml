@@ -24,26 +24,29 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+          # Runs a set of commands using the runners shell
+      - name: Svelte Run and build
+        run: |
+          npm install;
+          npm run build;
+    # Steps represent a sequence of tasks that will be executed as part of the job
+  deployment:
+      runs-on: ubuntu-latest
+      steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - uses: actions/labeler@v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-
-      # Runs a set of commands using the runners shell
-      - name: Svelte Run and build
-        run: |
-          npm install;
-          npm run build;
+          
+      - name: Deploy GitHub Pages site
+        uses: actions/checkout@v3
         
       - name: Svelte-Check PR Annotator
       # You may pin to the exact commit or the version.
       # uses: prgm-dev/svelte-check-pr-annotator@4b8f3c1a599074b2a2264ab842ca4dd409d8ddd2
         uses: prgm-dev/svelte-check-pr-annotator@v1
         
-      - name: Deploy GitHub Pages site
-        uses: actions/checkout@v3
+
 
