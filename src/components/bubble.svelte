@@ -1,9 +1,13 @@
+<script>
+    const url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+</script>
+
 <div class="buttons">
-    <a class="btn btn-1" href="https://www.w3schools.com">Hover me</a> 
-    <a class="btn btn-2" href="https://www.w3schools.com">Hover me</a> 
-    <a class="btn btn-3" href="https://www.w3schools.com">Hover me</a> 
-    <a class="btn btn-4" href="https://www.w3schools.com">Hover me</a> 
-    <a class="btn btn-5" href="https://www.w3schools.com">Hover me</a> 
+    <a class="btn btn-1" href="{url}">sneaky</a> 
+    <a class="btn btn-2" href="{url}">apple juice</a> 
+    <a class="btn btn-3" href="{url}">explanation</a> 
+    <a class="btn btn-4" href="{url}">pain</a> 
+    <a class="btn btn-5" href="{url}">pc</a> 
 
     <style>
             body{
