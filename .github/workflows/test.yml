@@ -45,7 +45,7 @@ jobs:
         uses: prgm-dev/svelte-check-pr-annotator@v1
         
       - name: Deploy GitHub Pages site
-        uses: actions/deploy-pages@v1.2.3
+        uses: actions/checkout@v3
         with:
           # The status of the previous build.
           conclusion: True # optional
