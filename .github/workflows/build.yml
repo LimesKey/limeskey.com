@@ -34,18 +34,15 @@ jobs:
         run: |
           npm install;
           npm run build;
-
   deployment:
       runs-on: ubuntu-latest
       steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: Deploy GitHub Pages site
-        - uses: actions/labeler@v4
+          uses: actions/labeler@v4
           with:
             token: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Svelte-Check PR Annotator
           uses: prgm-dev/svelte-check-pr-annotator@v1
         
-
-
