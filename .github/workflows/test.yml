@@ -35,13 +35,12 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
       - uses: actions/labeler@v4
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Deploy GitHub Pages site
         uses: actions/checkout@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Svelte-Check PR Annotator
       # You may pin to the exact commit or the version.
