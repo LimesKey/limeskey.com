@@ -35,6 +35,7 @@
 					min-height: 100vw;
 					justify-content: center;
 					align-items: center; 
+					place-content: center;
 				}
 		</style>
 
@@ -48,6 +49,7 @@
 					padding: 20px;
 					max-width: 50%;
 
+					margin: auto;
 					margin-left: auto;
 					margin-right: auto;
 				}
