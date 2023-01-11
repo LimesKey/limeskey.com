@@ -1,5 +1,5 @@
 <script>
-	import { fix_position } from "svelte/internal";
+	import { end_hydrating, fix_position } from "svelte/internal";
 	import buttons from '/src/components/bubble.svelte';
 </script>
 
@@ -30,37 +30,37 @@
 	<main>
 		<style>
 			.main {
-					display: grid;
-					height: 100vh;
-					width: 100vw;
+					display: flex;
+					min-height: 100vh;
+					min-height: 100vw;
+					justify-content: center;
+					align-items: center; 
 				}
 		</style>
 
 		<div class="home">
 			<style>	
 				.home {
+					display: flex;
 					background-color: gray;
-					border-radius: 15px;
-					place-items: center;
+					border-radius: 15px;		
 					opacity: 0.8;
-					place-content: center start;
-					place-items: center;
 					padding: 20px;
+					max-width: 50%;
+
+					margin-left: auto;
+					margin-right: auto;
 				}
 			</style>
 
 			<div class="title-box">
 				<style>
 					.title-box {
-						margin: 0 auto;
 						padding: 20px;
 						text-align: center;
 						border: 2px solid #ccc;
 						border-radius: 5px;
 						overflow-wrap: break-word;
-						width: 50%;
-						justify-content: center;
-						height: 50%;
 						padding: 10px;
 					}
 				</style>
@@ -68,9 +68,7 @@
 				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.</h3>
 				<div class="buttons">
 					<style>
-						.buttons {
-							margin: auto;
-							justify-content: center;
+						.buttons {		
 							padding: 19px;
 							border: 4px solid #ccc;
 							border-radius: 10px;
