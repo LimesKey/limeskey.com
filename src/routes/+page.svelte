@@ -30,12 +30,13 @@
 	<main>
 		<style>
 			.main {
-					display: flex;
+					display: grid;
+					
 					min-height: 100vh;
 					min-height: 100vw;
-					justify-content: center;
-					align-items: center; 
-					place-content: center;
+					justify-content:center;
+					align-items:center;
+					margin: auto;
 				}
 		</style>
 
@@ -43,15 +44,15 @@
 			<style>	
 				.home {
 					display: flex;
+					justify-content:center;
+					align-items:center;
 					background-color: gray;
 					border-radius: 15px;		
 					opacity: 0.8;
 					padding: 20px;
 					max-width: 50%;
-
 					margin: auto;
-					margin-left: auto;
-					margin-right: auto;
+					position: relative;
 				}
 			</style>
 
@@ -63,7 +64,6 @@
 						border: 2px solid #ccc;
 						border-radius: 5px;
 						overflow-wrap: break-word;
-						padding: 10px;
 					}
 				</style>
 				<h2>Here at Limeskey Media Group, we value our time</h2>
