@@ -36,11 +36,12 @@
 					min-height: 100vw;
 					justify-content:center;
 					align-items:center;
+					align-content: middle;
 					margin: auto;
 				}
 		</style>
 
-		<div class="home" style="align-content: middle; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<div class="home" style="">
 			<style>	
 				.home {
 					display: flex;
@@ -49,17 +50,19 @@
 					background-color: gray;
 					border-radius: 15px;		
 					opacity: 0.8;
-					padding: 20px;
-					max-width: 50%;
+					padding: 30px;
+					max-width: 40%;
 					margin: auto;
-					position: relative;
+					position: absolute;
+					top: 50%; left: 50%; 
+					transform: translate(-50%, -50%);
 				}
 			</style>
 
 			<div class="title-box">
 				<style>
 					.title-box {
-						padding: 20px;
+						padding: 30px;
 						text-align: center;
 						border: 2px solid #ccc;
 						border-radius: 5px;
@@ -67,11 +70,11 @@
 					}
 				</style>
 				<h2>Here at Limeskey Media Group, we value our time</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.</h3>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.</h3><br>
 				<div class="buttons">
 					<style>
 						.buttons {		
-							padding: 19px;
+							padding: 30px;
 							border: 4px solid #ccc;
 							border-radius: 10px;
 						}
