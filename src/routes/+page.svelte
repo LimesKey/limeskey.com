@@ -1,5 +1,5 @@
 <script>
-	import { fix_position } from "svelte/internal";
+	import { end_hydrating, fix_position } from "svelte/internal";
 	import buttons from '/src/components/bubble.svelte';
 </script>
 
@@ -28,69 +28,68 @@
 	</div>
 
 	<main>
-		<div class="home">
-			<style>
-				main {
-					min-width: 100%;
-					min-height: 100vh;
-			
+		<style>
+			.main {
 					display: grid;
-					place-content: center;
+					
+					min-height: 100vh;
+					min-height: 100vw;
+					justify-content:center;
+					align-items:center;
+					align-content: middle;
+					margin: auto;
 				}
+		</style>
 
-			
+		<div class="home" style="">
+			<style>	
 				.home {
+					display: flex;
+					justify-content:center;
+					align-items:center;
+					background-color: gray;
+					border-radius: 15px;		
+					opacity: 0.8;
+					padding: 30px;
 					max-width: 40%;
 					margin: auto;
-					display: flex;
-					background-color: gray;
-					border-radius: 15px;
-					opacity: 0.8;
-					padding: 20px;
-					position:relative;
-					max-height: 110%;
+					position: absolute;
+					top: 50%; left: 50%; 
+					transform: translate(-50%, -50%);
 				}
 			</style>
 
-			<div class="title">
+			<div class="title-box">
 				<style>
-					.title {
-						padding: 20px;
-						display: grid;
-						place-content: center;
+					.title-box {
+						padding: 30px;
 						text-align: center;
-						position:relative;
 						border: 2px solid #ccc;
-						min-height: 110%;
-						margin: auto;
-						min-width: 90%;
 						border-radius: 5px;
+						overflow-wrap: break-word;
 					}
 				</style>
-				<h1>Here at Limeskey Media Group, we value our time</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.</h2>
+				<h2>Here at Limeskey Media Group, we value our time</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.</h3><br>
 				<div class="buttons">
 					<style>
-						.buttons {
-							display: table;
-							margin: auto;
-							justify-content: center;
-							padding: 19px;
-							resize: horizontal;
+						.buttons {		
+							padding: 30px;
 							border: 4px solid #ccc;
 							border-radius: 10px;
 						}
 					</style>
-				<svelte:component this={buttons}/>
+					<svelte:component this={buttons}/>
 				</div>
+			</div>
 		</div>
-			<background>
-				<style>
-					.background {
-						min-width: 100%;
-						min-height: 100%;
-						display: fill;
-						background-size: cover;
+			
+		<background>
+			<style>
+				.background {
+					min-width: 100%;
+					min-height: 100%;
+					background-size: cover;
 						position: fixed;
 						background-image: url("/assets/cat.jpg");
 						background-repeat: no-repeat;
@@ -112,6 +111,5 @@
 					}
 				</style>
 			</background>
-		</div>
 	</main>
 </body>
