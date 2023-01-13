@@ -40,7 +40,7 @@
 				}
 		</style>
 
-		<div class="home">
+		<div class="home" style="align-content: middle; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 			<style>	
 				.home {
 					display: flex;
