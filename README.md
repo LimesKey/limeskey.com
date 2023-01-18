@@ -1,4 +1,4 @@
 # limeskey.com
+Profile Page For LimesKey
 
-This is a website created by me and a friend of mine.
-Credits go to Awokein for the HTML template
+New website remake in Svelte. This is a project to help be learn Svelte better
