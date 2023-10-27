@@ -21,18 +21,14 @@
             align-items: center;
             align-content: center;
             flex-wrap: wrap;
-            width: 80vw;
-            margin: 0 auto;
-            min-height: 100vh;
+            margin: auto;
             }
             .btn {
             flex: 1 1 auto;
-            margin: 10px;
-            padding: 30px;
+            padding: 10px;
             text-align: center;
             text-transform: uppercase;
             transition: 0.5s;
-            background-size: 200% auto;
             color: white;
             /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
             box-shadow: 0 0 20px #eee;
