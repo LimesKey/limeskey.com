@@ -1,6 +1,6 @@
 <script>
 	import { end_hydrating, fix_position } from "svelte/internal";
-	import buttons from '/src/components/bubble.svelte';
+	import buttons from '/src/components/buttons.svelte';
 </script>
 
 <head>
@@ -26,6 +26,35 @@
 		<div class="Cloud Background" />
 		<div class="Cloud Background" />
 	</div>
+
+	<bubble>
+		<style>
+			.bubble {
+			position: relative;
+			background: #00aabb;
+			border-radius: .4em;
+			}
+		</style>
+		
+		<div class="quote">
+			<q>One, two, Freddy's coming for you
+				Three, four, better lock your door
+				Five, six, grab your crucifix
+				Seven, eight, better stay up late
+				Nine, ten, never sleep again</q>
+			<style>
+				.quote {
+					padding: 70px;
+					display: flex;
+					font-style: italic;
+					justify-content: center;
+					color: white;
+					font: Georgia;
+					}
+			</style>
+		</div>
+	</bubble>
+
 
 	<main>
 		<style>
@@ -83,17 +112,6 @@
 				</div>
 			</div>
 		</div>
-			
-		<quote>
-			<q>this is test</q>
-			<style>
-				.quote {
-					display: flex;
-					align: top;
-				}
-			</style>
-		</quote>
-
 
 		<background>
 			<style>
