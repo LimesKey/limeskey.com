@@ -84,6 +84,17 @@
 			</div>
 		</div>
 			
+		<quote>
+			<q>this is test</q>
+			<style>
+				.quote {
+					display: flex;
+					align: top;
+				}
+			</style>
+		</quote>
+
+
 		<background>
 			<style>
 				.background {
