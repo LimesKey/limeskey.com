@@ -37,11 +37,7 @@
 		</style>
 		
 		<div class="quote">
-			<q>One, two, Freddy's coming for you
-				Three, four, better lock your door
-				Five, six, grab your crucifix
-				Seven, eight, better stay up late
-				Nine, ten, never sleep again</q>
+			<q>Happy November!</q>
 			<style>
 				.quote {
 					padding: 70px;
