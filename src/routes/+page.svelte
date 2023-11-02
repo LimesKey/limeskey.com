@@ -46,6 +46,7 @@
 					justify-content: center;
 					color: white;
 					font: Georgia;
+					font-size: 200%;
 					}
 			</style>
 		</div>
@@ -115,25 +116,26 @@
 					min-width: 100%;
 					min-height: 100%;
 					background-size: cover;
-						position: fixed;
-						background-image: url("/assets/cat.jpg");
-						background-repeat: no-repeat;
-						background-color: aqua;
-						z-index: -2;
-						background-position: 90%, 60%; 
-					}
+					position: fixed;
+					background-image: url("/assets/cat.jpg");
+					background-repeat: no-repeat;
+					background-color: aqua;
+					z-index: -2;
+					border: 2px;
+					background-position: 90%, 60%; 
+				}
 
-					.background:after {
-						content: "";
-						width: 100%;
-						height: 100%;
-						backdrop-filter: blur(8px);
-						pointer-events: none;
-						position: absolute;
-						white-space: nowrap;
-						overflow: hidden;
-						display: flex;
-					}
+				.background:after {
+					content: "";
+					width: 100%;
+					height: 100%;
+					backdrop-filter: blur(8px);
+					pointer-events: none;
+					position: absolute;
+					white-space: nowrap;
+					overflow: hidden;
+					display: flex;
+				}
 				</style>
 			</background>
 	</main>
