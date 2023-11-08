@@ -35,6 +35,31 @@
 			border-radius: .4em;
 			}
 		</style>
+
+		<!--
+		<embeds>
+			<style>
+				.figure
+				{
+					display: inline-block;
+					position: fixed;
+					align: bottom;
+				}
+			</style>
+			<figure><embed src="https://wakatime.com/share/@f7db4c5e-9dd7-4181-aa0a-cad5f52d5ee2/1f2a9238-569a-40a4-8923-7512e420ae6d.svg"></figure>
+		</embeds>
+
+		<hackclub>
+			<style>
+				.hackclub {
+					position: absolute;
+				}
+			</style>
+
+			<embed src=https://assets.hackclub.com/flag-orpheus-left.svg>
+		</hackclub>
+	
+		uh fix later --> 
 		
 		<div class="quote">
 			<q>Happy November!</q>
@@ -96,7 +121,9 @@
 					}
 				</style>
 				<h2>Here at Limeskey Media Group, we value our time</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.</h3><br>
+				<h3>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis. Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis mauris sit amet massa vitae tortor.
+				</h3><br>
 				<div class="buttons">
 					<style>
 						.buttons {		
@@ -109,6 +136,52 @@
 				</div>
 			</div>
 		</div>
+
+	<sidebars>
+		<style>
+			.sidebar_left {
+				display: flex;
+				position: absolute;
+				width: 20%;
+				border: 3px solid #73AD21;
+				height: 70%;
+				background: #333;
+				color: #fff;
+				padding: 20px;
+				border-radius: 25px;
+				align: center;
+				opacity: 0.9;
+				margin-left: 5%;
+
+				text-align: middle;
+			}
+
+			.sidebar_right {
+				display: flex;
+				position: absolute;
+				padding: 20px;
+				align: center;
+			}
+
+			.sidebar_description {
+				line-height: 1.4;
+			}
+
+		</style>
+		<div class="sidebar_left">
+			<div class="sidebar_description">
+				<h2>Projects</h2>
+				<p1>
+					Currently, I've been working on many projects in 2023.
+				</p1>
+
+			</div>
+		</div>
+
+		<div class="sidebar_right">
+
+		</div>
+	</sidebars>
 
 		<background>
 			<style>
