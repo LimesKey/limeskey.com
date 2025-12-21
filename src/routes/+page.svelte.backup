@@ -7,7 +7,7 @@
 	import ProjectsSection from '../components/ProjectsSection.svelte';
 	import { sunStore } from '$lib/stores';
 
-	// reactive sun data
+	// Subscribe to sun data store
 	let sunData;
 	$: sunData = $sunStore;
 
@@ -25,13 +25,13 @@
 </svelte:head>
 
 <div class="relative min-h-screen overflow-hidden text-white">
-	<!-- alert at top -->
+	<!-- Alert Banner -->
 	<Alert />
 
-	<!-- draggable sticker -->
+	<!-- Draggable Avatar/Sticker -->
 	<DraggableSticker borderColor={sunData.color} />
 
-	<!-- bg -->
+	<!-- Background Image -->
 	<div class="fixed inset-0 -z-10" aria-hidden="true">
 		<div
 			class="absolute inset-0 bg-[url('/assets/cat.jpg')] bg-cover bg-position-[90%_60%] bg-cyan-400"
@@ -39,12 +39,12 @@
 		<div class="absolute inset-0 backdrop-blur-sm"></div>
 	</div>
 
-	<!-- sun gets darker/warmer at night -->
+	<!-- Sun/Moon -->
 	<div class="fixed top-8 left-8 z-10 pointer-events-none" aria-hidden="true">
 		<Sun color={sunData.color} isNight={sunData.isNight} />
 	</div>
 
-	<!-- clouds at bottom -->
+	<!-- Animated Clouds -->
 	<div
 		class="clouds-legacy fixed bottom-0 left-0 right-0 z-0 h-[38%] w-full"
 		aria-hidden="true"
