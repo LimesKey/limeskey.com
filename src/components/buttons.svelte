@@ -10,10 +10,10 @@
 	];
 </script>
 
-<div class="flex w-full flex-wrap justify-center gap-3">
+<div class="flex w-full flex-wrap justify-center gap-2 sm:gap-3">
 	{#each buttons as button}
 		<a
-			class={`flex-1 min-w-30 rounded-lg px-4 py-2 text-center text-sm uppercase text-white shadow-[0_0_20px_#eee] transition-[background-position] duration-500 ease-linear bg-size-[200%] bg-position-[left_center] hover:bg-position-[right_center] ${button.gradient}`}
+			class={`flex-1 min-w-24 sm:min-w-30 rounded-lg px-3 sm:px-4 py-2 text-center text-xs sm:text-sm uppercase text-white shadow-[0_0_20px_#eee] transition-[background-position] duration-500 ease-linear bg-size-[200%] bg-position-[left_center] hover:bg-position-[right_center] ${button.gradient}`}
 			href={url}
 		>
 			{button.label}

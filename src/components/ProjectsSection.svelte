@@ -90,13 +90,13 @@
 </script>
 
 <section
-	class="relative w-full max-w-500 self-start rounded-3xl border-2 bg-linear-to-br from-[#0f172a]/80 via-[#0d1c2f]/80 to-[#0a0f1a]/80 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur lg:absolute lg:left-6 lg:top-1/2 lg:-translate-y-1/2 lg:w-md ml-15"
+	class="relative w-full max-w-500 self-start rounded-3xl border-2 bg-linear-to-br from-[#0f172a]/80 via-[#0d1c2f]/80 to-[#0a0f1a]/80 p-4 sm:p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur lg:absolute lg:left-6 lg:top-1/2 lg:-translate-y-1/2 lg:w-md ml-0 sm:ml-15"
 	aria-labelledby="projects-heading"
 	style="border-color: {borderColor};"
 >
 	<div class="space-y-1">
-		<h2 id="projects-heading" class="text-2xl font-semibold tracking-tight">Projects</h2>
-		<p class="text-sm text-white/70">Latest GitHub repos where I've shipped code.</p>
+		<h2 id="projects-heading" class="text-xl sm:text-2xl font-semibold tracking-tight">Projects</h2>
+		<p class="text-xs sm:text-sm text-white/70">Latest GitHub repos where I've shipped code.</p>
 	</div>
 
 	{#if loading}
@@ -135,36 +135,36 @@
 		<div class="mt-6 grid grid-cols-1 gap-4">
 			{#each projects as project}
 				<article
-					class="group relative flex flex-col gap-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition hover:-translate-y-1 hover:border-white/25"
+					class="group relative flex flex-col gap-2 sm:gap-3 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-3 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition hover:-translate-y-1 hover:border-white/25"
 				>
 					<div class="relative">
 						<a
 							href={project.repoUrl}
 							target="_blank"
 							rel="noreferrer"
-							class="block pr-16 text-lg font-semibold text-white transition group-hover:text-lime-200"
+							class="block pr-12 sm:pr-16 text-base sm:text-lg font-semibold text-white transition group-hover:text-lime-200"
 						>
 							{project.name}
 						</a>
 						<div
-							class={`absolute right-0 top-0 flex items-center gap-1.5 rounded-full border border-white/10 bg-white/10 px-2 py-1 ${project.stars > 0 ? 'text-amber-300' : 'text-white/60'}`}
+							class={`absolute right-0 top-0 flex items-center gap-1 sm:gap-1.5 rounded-full border border-white/10 bg-white/10 px-1.5 sm:px-2 py-0.5 sm:py-1 ${project.stars > 0 ? 'text-amber-300' : 'text-white/60'}`}
 						>
-							<span class="text-2xl leading-none -mt-px" aria-hidden="true">★</span>
-							<span class="text-sm font-semibold leading-none">{project.stars}</span>
+							<span class="text-lg sm:text-2xl leading-none -mt-px" aria-hidden="true">★</span>
+							<span class="text-xs sm:text-sm font-semibold leading-none">{project.stars}</span>
 							<span class="sr-only">stars</span>
 						</div>
 					</div>
 					{#if project.languages?.length}
-						<div class="flex flex-wrap gap-2 text-xs uppercase tracking-wide text-white/70">
+						<div class="flex flex-wrap gap-1.5 sm:gap-2 text-2xs sm:text-xs uppercase tracking-wide text-white/70">
 							{#each project.languages as lang}
-								<span class="rounded-full border border-white/15 bg-white/5 px-3 py-1">{lang}</span>
+								<span class="rounded-full border border-white/15 bg-white/5 px-2 sm:px-3 py-0.5 sm:py-1">{lang}</span>
 							{/each}
 						</div>
 					{/if}
-					<p class="text-sm leading-relaxed text-white/80">{project.description}</p>
-					<div class="mt-auto space-y-1 text-sm text-white/70">
+					<p class="text-xs sm:text-sm leading-relaxed text-white/80">{project.description}</p>
+					<div class="mt-auto space-y-1 text-xs sm:text-sm text-white/70">
 						<div class="flex items-start gap-2">
-							<span class="text-white/50">Commit</span>
+							<span class="text-white/50 text-2xs sm:text-xs">Commit</span>
 							<a
 								href={project.commitUrl}
 								target="_blank"
@@ -174,7 +174,7 @@
 								{project.commitMessage}
 							</a>
 						</div>
-						<div class="flex items-center gap-2 text-xs uppercase tracking-wide text-white/50">
+						<div class="flex items-center gap-2 text-2xs sm:text-xs uppercase tracking-wide text-white/50">
 							<span>Committed</span>
 							<span>{formatDate(project.commitDate)}</span>
 						</div>
