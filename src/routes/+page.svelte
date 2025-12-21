@@ -52,14 +52,18 @@
 	>
 		{#each Array.from({ length: 10 }) as _, i}
 			<div
-				class="cloud-legacy {i % 2 === 0 ? 'foreground' : 'background'} {i >= 5 ? 'hidden sm:block' : ''}"
+				class="cloud-legacy {i % 2 === 0 ? 'foreground' : 'background'} {i >= 5
+					? 'hidden sm:block'
+					: ''}"
 				style="animation-delay:-{18 + i * 18.5}s; bottom:{i * 10}%"
 			></div>
 		{/each}
 	</div>
 
 	<!-- Main Content -->
-	<main class="relative flex min-h-screen flex-col items-center justify-center gap-4 sm:gap-8 px-4 py-8">
+	<main
+		class="relative flex min-h-screen flex-col items-center justify-center gap-4 sm:gap-8 px-4 py-8"
+	>
 		<!-- Hero Section -->
 		<section class="w-full">
 			<div
@@ -67,7 +71,9 @@
 				style="border-color: {sunData.color};"
 			>
 				<div class="w-full rounded-xl px-3 sm:px-6 md:px-8 py-4 sm:py-6 text-center">
-					<h2 class="mb-3 sm:mb-4 text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-white">
+					<h2
+						class="mb-3 sm:mb-4 text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-white"
+					>
 						Here at Limeskey Media Group, we value our time
 					</h2>
 					<p class="mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed text-white/80">
