@@ -1,6 +1,7 @@
 name = "limeskey-com"
 pages_build_output_dir = ".svelte-kit/cloudflare"
 compatibility_date = "2026-03-31"
+compatibility_flags = [ "nodejs_compat", "enable_nodejs_http_modules" ]
 
 [vars]
 NODE_VERSION = "25.8.2"
