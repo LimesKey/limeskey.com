@@ -1,10 +1,50 @@
+# OS files
 .DS_Store
+
+# Dependencies
 node_modules
-/build
-/.svelte-kit
-/package
+
+# Build artifacts
+build
+dist
+package
+.svelte-kit
+.vercel_build_output
+_worker.js
+_routes.json
+/packages/package/test/**/package
+/documentation/types.js
+
+# Environment files
 .env
 .env.*
 !.env.example
+
+# Cloudflare / Wrangler
+.wrangler
+.cloudflare
+.dev.vars*
+!.dev.vars.example
+
+# Package manager / lockfiles
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Tooling caches
+.netlify
+.turbo
+.vercel
+
+# Tests
+test-results/
+.test-tmp
+_tmp_flaky_test_output.txt
+
+# Local/IDE files
+symlink-from
+.idea/
+
+# Vite generated temp files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*

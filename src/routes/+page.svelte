@@ -1,7 +1,6 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
 	import Buttons from '../components/buttons.svelte';
-	import Alert from '../components/Alert.svelte';
 	import Sun from '../components/Sun.svelte';
 	import DraggableSticker from '../components/DraggableSticker.svelte';
 	import ProjectsSection from '../components/ProjectsSection.svelte';
@@ -25,7 +24,6 @@
 </svelte:head>
 
 <div class="relative min-h-screen overflow-hidden text-white">
-	<Alert />
 	<DraggableSticker borderColor={sunData.color} />
 
 	<!-- bg -->
@@ -71,19 +69,16 @@
 					<h2
 						class="mb-3 sm:mb-4 text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-white"
 					>
-						Here at Limeskey Media Group, we value our time
+						Here at LimesKey Media Group, we value our time
 					</h2>
-					<p class="mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed text-white/80">
+					<p class="mb-4 sm:mb-6 sm:text-base leading-relaxed text-white/80">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum
 						lorem sed risus. Volutpat blandit aliquam etiam erat. Non odio euismod lacinia at quis.
 						Fermentum leo vel orci porta non. Condimentum lacinia quis vel eros donec ac odio tempor
 						orci. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Dictum fusce ut
 						placerat orci. Phasellus vestibulum lorem sed risus ultricies. Id cursus metus aliquam
-						eleifend mi in. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis
-						orci. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Adipiscing
-						bibendum est ultricies integer. Neque ornare aenean euismod elementum nisi. Facilisis
-						mauris sit amet massa vitae tortor.
+						eleifend mi in.
 					</p>
 					<div class="rounded-xl border border-white/15 bg-white/5 p-4 sm:p-6 backdrop-blur">
 						<Buttons />
