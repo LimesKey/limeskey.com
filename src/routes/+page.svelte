@@ -25,10 +25,7 @@
 </svelte:head>
 
 <div class="relative min-h-screen overflow-hidden text-white">
-	<!-- alert at top -->
 	<Alert />
-
-	<!-- draggable sticker -->
 	<DraggableSticker borderColor={sunData.color} />
 
 	<!-- bg -->
