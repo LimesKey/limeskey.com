@@ -1,7 +1,6 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
 	import Buttons from '../components/buttons.svelte';
-	import Alert from '../components/Alert.svelte';
 	import Sun from '../components/Sun.svelte';
 	import DraggableSticker from '../components/DraggableSticker.svelte';
 	import ProjectsSection from '../components/ProjectsSection.svelte';
@@ -25,7 +24,6 @@
 </svelte:head>
 
 <div class="relative min-h-screen overflow-hidden text-white">
-	<Alert />
 	<DraggableSticker borderColor={sunData.color} />
 
 	<!-- bg -->
